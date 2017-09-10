@@ -26,6 +26,7 @@ module.exports = (env = {}) => {
         html(PATHS),
         images(isDebug),
         json(),
+        uglify(isDebug)
     ]);
 
 };

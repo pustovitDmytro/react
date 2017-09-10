@@ -14,7 +14,7 @@ module.exports = (PATHS,isDebug) => merge([
             path: PATHS.build,
             filename: "bundle.js"
         },
-        devtool: 'source-map',
+        devtool: isDebug?'source-map':'',
         resolve: {
             alias: {
                 styles: PATHS.build
@@ -33,6 +33,7 @@ module.exports = (PATHS,isDebug) => merge([
             new webpack.HotModuleReplacementPlugin(),
             new FaviconsWebpackPlugin({
                 logo: PATHS.source+'/favicon.png',
+                prefix: 'favicon/',
                 inject: true,  // Inject the html into the html-webpack-plugin
                 //background: '#fff',// favicon background color
                 icons: {
