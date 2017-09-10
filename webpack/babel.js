@@ -10,6 +10,7 @@ module.exports = (path, isDebug) => ({
                 exclude: /node_modules/,
                 loader: "babel-loader",
                 options: {
+                    presets: ['env', "stage-2","react"],
                     minified: !isDebug,
                     comments: isDebug,
                 }

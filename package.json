@@ -1,13 +1,13 @@
 {
-  "name": "webpack-webextension",
+  "name": "react-template",
   "version": "0.0.1",
   "description": "Example of WebExtension with webpack",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:watch": "webpack --watch",
-    "assemble:release": "webpack -p --env.release",
     "assemble": "webpack",
-    "build": "webpack -p",
+    "build": "webpack -p --env.release",
+    "start": "npm run build && npm run start:http-server",
     "start:http-server": "http-server build -p 7000 -o",
     "start:dev-server": "webpack-dev-server"
   },
@@ -24,6 +24,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
+    "favicons-webpack-plugin": "0.0.7",
     "file-loader": "^0.11.1",
     "html-webpack-plugin": "^2.28.0",
     "http-server": "^0.10.0",
