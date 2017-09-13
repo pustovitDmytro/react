@@ -107,7 +107,10 @@ yarn start:watch
 
 ## Related Projects
 
-There are some 
+There are some  more boilerplates that I'm working on:
+1. [gulp](https://github.com/pustovitDmytro/gulp) - simple template for quick site creation via gulp
+2. [web-extension](https://github.com/pustovitDmytro/web-extension) - boilerplate to making web-extensions (firefox and chrome simultaneously)
+3. [parser](https://github.com/pustovitDmytro/parser) - tiny universal Python-based asynchronous sites scrapper
 
 ## License
 
